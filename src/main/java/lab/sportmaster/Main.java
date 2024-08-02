@@ -18,5 +18,13 @@ public class Main {
         passengerCar.carsSoldCount();
 
         System.out.println("Passenger count: " + firstCar.getPassengersCount());
+
+        User user1 = new User("Vlad","Borisov",24);
+        User user2 = new User("Vlad","Borisov",25);
+        User user3 = new User("Vlad","Borisov",26);
+
+        user1.getUserInfo();
+        user2.getUserInfo();
+        user3.getUserInfo();
     }
 }
