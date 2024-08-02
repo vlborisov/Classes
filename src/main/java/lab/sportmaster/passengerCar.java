@@ -65,4 +65,6 @@ public class passengerCar {
     public void getCarInfo(){
         System.out.println(String.format("------------------------------------------------\nHorse power: %s\nPassengers count: %s\nCar seats count: %s\nDoors count: %s\nIs new: %s\nIs doors open: %s\nColor: %s\nOwner name: %s\nWeight: %s\n------------------------------------------------",this.horsePower,this.passengersCount,this.carSeatsCount,this.doorsCount,this.isNew,this.isDoorsOpen, this.color, this.ownerName,this.weight));
     }
+
+
 }
