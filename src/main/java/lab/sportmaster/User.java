@@ -7,10 +7,10 @@ public class User {
 
     private static ArrayList<Integer> idArr = new ArrayList<Integer>();
 
-    int id;
-    String firstName;
-    String secondName;
-    int age;
+    private Integer id;
+    private String firstName;
+    private String secondName;
+    private Integer age;
 
     public User(String firstName, String secondName, int age) {
         this.id = generateId();
@@ -34,10 +34,23 @@ public class User {
         System.out.printf("------------------------------------------------\nUser info:\nId: %d\nFirst name: %s\nSecond name: %s\nAge: %d\n------------------------------------------------\n", this.id, this.firstName, this.secondName, this.age);
     }
 
-    public static void getUsersId(){
-        System.out.println("Все Id пользователей:");
+    public static void getUsersId() {
+        System.out.println("------------------------------------------------\nВсе Id пользователей:");
         for (Integer integer : idArr) {
             System.out.println(integer);
         }
+        System.out.println("------------------------------------------------\n");
+    }
+
+    public void deleteUser() {
+        idArr.remove((Integer) this.id);
+        this.id = null;
+        this.firstName = null;
+        this.secondName = null;
+        this.age = null;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
     }
 }
