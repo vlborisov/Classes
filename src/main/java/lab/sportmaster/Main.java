@@ -26,5 +26,7 @@ public class Main {
         user1.getUserInfo();
         user2.getUserInfo();
         user3.getUserInfo();
+
+        User.getUsersId();
     }
 }
